@@ -1,3 +1,5 @@
+Note for myself: It didn't trigger an alarm on the github actions because the ubuntu 22.04 image has bison and flex builtin (https://github.com/actions/runner-images/blob/ubuntu22/20241006.1/images/ubuntu/Ubuntu2204-Readme.md)
+
 # asdf-postgres ![Build](https://github.com/smashedtoatoms/asdf-postgres/workflows/Build/badge.svg?branch=master)
 
 Postgresql plugin for [asdf](https://github.com/asdf-vm/asdf) version manager
