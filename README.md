@@ -11,6 +11,10 @@ Postgresql plugin for [asdf](https://github.com/asdf-vm/asdf) version manager
 - uuid
 - icu-devtools (linux) or icu4c (MacOS)
 
+N.B.: For version 17.0, the following dependencies are now required
+- flex
+- bison
+
 _This assumes macOS, a Debian-flavored linux, or a SUSE-flavored linux.  If you
 need it to work on something else, you may need to modify the plugin. You'll
 need the dependencies referenced in the list above installed via whatever method
@@ -42,20 +46,20 @@ export PKG_CONFIG_PATH="/opt/homebrew/bin/pkg-config:$(brew --prefix icu4c)/lib/
 
 ```sh
 sudo apt-get install linux-headers-$(uname -r) build-essential libssl-dev \
-libreadline-dev zlib1g-dev libcurl4-openssl-dev uuid-dev icu-devtools libicu-dev
+libreadline-dev zlib1g-dev libcurl4-openssl-dev uuid-dev icu-devtools libicu-dev flex bison
 ```
 
 ### Ubuntu (WSL)
 
 ```sh
 sudo apt-get install build-essential libssl-dev libreadline-dev zlib1g-dev \
-libcurl4-openssl-dev uuid-dev icu-devtools libicu-dev
+libcurl4-openssl-dev uuid-dev icu-devtools libicu-dev flex bison
 ```
 
 ### Fedora
 
 ```sh
-sudo dnf install openssl-devel readline-devel zlib-devel libcurl-devel uuid-devel libuuid-devel
+sudo dnf install openssl-devel readline-devel zlib-devel libcurl-devel uuid-devel libuuid-devel flex-devel bison-devel
 ```
 
 ### (open)SUSE
